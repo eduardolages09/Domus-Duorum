@@ -8,5 +8,5 @@
 }
 .hero__titulo > span + span { font-style: italic; }
 
-/* Domus Duorum · hero: a fachada alargada para a esquerda (parede lisa para o nome); no telemóvel, a porta verde */
-@media (max-width: 760px), (max-width: 1000px) and (orientation: portrait) { .hero__foto img { object-position: 100% 50%; } }
+/* Domus Duorum · hero: o pátio (lajes escuras em baixo para o nome); no telemóvel, as portas brancas */
+@media (max-width: 760px), (max-width: 1000px) and (orientation: portrait) { .hero__foto img { object-position: 70% 50%; } }
