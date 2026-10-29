@@ -1,0 +1,12 @@
+/* Proposta A · Ocre — Lora + Wix Madefor Text.
+   O ocre das paredes do pátio nos botões, a ardósia das lajes nos quartos e o castanho das vigas nas faixas escuras. Depois do exterior, a mesa do pequeno-almoço à porta branca do pátio numa moldura em forma de porta, com o número 294-A. */
+:root {
+  --nome: "Lora", Georgia, serif; --serif: "Lora", Georgia, serif; --sans: "Wix Madefor Text", system-ui, sans-serif;
+  --peso-titulo: 400; --peso-nome: 400;
+  --fundo: #f6f1e6; --fundo-2: #e8e3d8; --tinta: #2b2620; --tinta-2: #746f67; --destaque: #8e6c33; --destaque-2: #74582a; --destaque-claro: #ccbda3; --escuro: #37312b; --escuro-2: #484038; --quartos: #404547; --claro: #f6f1e6; --bloco: #dfd4bf;
+  --letra: 16px; --letra-tm: calc(16px - .5px);
+}
+.hero__titulo > span + span { font-style: italic; }
+
+/* Domus Duorum · hero: a fachada alargada para a esquerda (parede lisa para o nome); no telemóvel, a porta verde */
+@media (max-width: 760px), (max-width: 1000px) and (orientation: portrait) { .hero__foto img { object-position: 100% 50%; } }
