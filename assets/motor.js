@@ -382,6 +382,9 @@
     const gFotos = $$('.gf', gFila);
     const gBarra = $('.galeria__barra', sec);
     const gPolegar = $('i', gBarra);
+    // uma divisão pode ter subtítulo próprio (data-frase no separador); troca com as fotos
+    const gFrase = gSeps.some((x) => x.dataset.frase) ? $('.cabeca__frase', sec) : null;
+    const gFrase0 = gFrase ? gFrase.textContent : '';
     let gDiv = 'tudo', gPedido = 0;
     const poeFilete = () => {
       const b = gSeps.find((x) => x.dataset.div === gDiv);
@@ -402,8 +405,10 @@
       poeFilete();
       // as fotos saem e as novas chegam da direita, uma a uma
       gFila.classList.remove('chega'); gFila.classList.add('sai');
+      if (gFrase) gFrase.style.opacity = 0;
       setTimeout(() => {
         if (meu !== gPedido) return;
+        if (gFrase) { gFrase.textContent = gSeps.find((x) => x.dataset.div === d).dataset.frase || gFrase0; gFrase.style.opacity = ''; }
         gFotos.forEach((g) => { g.hidden = d !== 'tudo' && g.dataset.div !== d; });
         numera();
         gFila.scrollLeft = 0;
@@ -611,7 +616,7 @@
     vi = Math.min(i || 0, serie.fotos.length - 1); ultimoFoco = document.activeElement;
     vTit.textContent = serie.titulo;
     vImg.removeAttribute('src');
-    vMinis.innerHTML = serie.fotos.map((f, j) => `<li><button type="button" aria-label="${f.leg || 'Fotografia ' + (j + 1)}"><img src="${f.mini}" alt="" decoding="async"></button></li>`).join('');
+    vMinis.innerHTML = serie.fotos.map((f, j) => `<li><button type="button" aria-label="${f.leg || (vMinis.dataset.txtFoto || 'Fotografia {n}').replace('{n}', j + 1)}"><img src="${f.mini}" alt="" decoding="async"></button></li>`).join('');
     $$('button', vMinis).forEach((b, j) => b.addEventListener('click', () => { vi = j; pinta(); }));
     visor.hidden = false; requestAnimationFrame(() => visor.classList.add('aberto'));
     if (lenis) lenis.stop(); document.body.style.overflow = 'hidden'; document.body.classList.add('com-visor');

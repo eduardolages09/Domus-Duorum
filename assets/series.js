@@ -43,6 +43,22 @@ window.SERIES = {
     "h": 2000
    },
    {
+    "src": "assets/img/ext-placa.jpg",
+    "mini": "assets/img/ext-placa-800.jpg",
+    "alt": "Janela de granito com gradeamento verde e a placa Domus Duorum na fachada amarela, junto à porta do número 294",
+    "leg": "A fachada",
+    "w": 1600,
+    "h": 900
+   },
+   {
+    "src": "assets/img/ext-espreguicadeira.jpg",
+    "mini": "assets/img/ext-espreguicadeira-800.jpg",
+    "alt": "Recanto coberto do pátio amarelo com espreguiçadeira de lona, vasos e cadeira de ferro, junto às portas brancas",
+    "leg": "O pátio",
+    "w": 1600,
+    "h": 900
+   },
+   {
     "src": "assets/img/hero-2.jpg",
     "mini": "assets/img/hero-2-800.jpg",
     "alt": "O pátio com flores brancas e amarelas em primeiro plano, espreguiçadeira e chapéu de sol",
@@ -111,7 +127,7 @@ window.SERIES = {
   ]
  },
  "q3": {
-  "titulo": "Duplo insonorizado",
+  "titulo": "Quarto Duplo",
   "fotos": [
    {
     "src": "assets/img/q3-cama.jpg",
@@ -130,12 +146,12 @@ window.SERIES = {
     "h": 2258
    },
    {
-    "src": "assets/img/q3-porta.jpg",
-    "mini": "assets/img/q3-porta-800.jpg",
-    "alt": "Cama com a porta aberta para o pátio e roupeiro de portadas",
+    "src": "assets/img/q3-varanda.jpg",
+    "mini": "assets/img/q3-varanda-800.jpg",
+    "alt": "A varanda privada do quarto, de paredes amarelas, com mesa redonda, cadeiras e vasos de flores",
     "leg": "",
-    "w": 1432,
-    "h": 1608
+    "w": 1600,
+    "h": 1204
    },
    {
     "src": "assets/img/q3-roupeiro.jpg",
@@ -165,6 +181,14 @@ window.SERIES = {
     "leg": "",
     "w": 3000,
     "h": 2000
+   },
+   {
+    "src": "assets/img/q4-roupeiro.jpg",
+    "mini": "assets/img/q4-roupeiro-800.jpg",
+    "alt": "Roupeiro antigo de espelho, cadeirão estofado, janela de portadas brancas e quadros de borboletas",
+    "leg": "",
+    "w": 1600,
+    "h": 900
    },
    {
     "src": "assets/img/q4-flores.jpg",
@@ -225,12 +249,12 @@ window.SERIES = {
   "titulo": "Sala",
   "fotos": [
    {
-    "src": "assets/img/sala.jpg",
-    "mini": "assets/img/sala-800.jpg",
-    "alt": "Sala comum com vigas de madeira, espreguiçadeira e cadeirão branco",
+    "src": "assets/img/sala-vigas.jpg",
+    "mini": "assets/img/sala-vigas-800.jpg",
+    "alt": "Sala comum com vigas de madeira antigas, dois cadeirões brancos, televisão e uma mala de livros",
     "leg": "A sala",
-    "w": 3000,
-    "h": 2000
+    "w": 1600,
+    "h": 900
    },
    {
     "src": "assets/img/sala-2.jpg",
@@ -243,7 +267,7 @@ window.SERIES = {
   ]
  },
  "pequeno": {
-  "titulo": "Sala de pequeno-almoço",
+  "titulo": "Sala de pequeno-almoço/Cozinha",
   "fotos": [
    {
     "src": "assets/img/pequeno-1.jpg",
@@ -254,12 +278,20 @@ window.SERIES = {
     "h": 2000
    },
    {
-    "src": "assets/img/pequeno-2.jpg",
-    "mini": "assets/img/pequeno-2-800.jpg",
-    "alt": "Mesa de pequeno-almoço com sumo, croissants, queijo, fiambre e fruta",
+    "src": "assets/img/pequeno-mesa.jpg",
+    "mini": "assets/img/pequeno-mesa-800.jpg",
+    "alt": "Hóspede a tomar café junto às portadas abertas, com a mesa do pequeno-almoço posta: sumo, croissants, queijo, fiambre e fruta",
     "leg": "À mesa",
-    "w": 3000,
-    "h": 2000
+    "w": 1600,
+    "h": 1066
+   },
+   {
+    "src": "assets/img/cozinha.jpg",
+    "mini": "assets/img/cozinha-800.jpg",
+    "alt": "Cozinha comum com armários brancos, azulejo bordô, forno, placa e mesas de madeira",
+    "leg": "A cozinha",
+    "w": 1200,
+    "h": 1600
    }
   ]
  }
