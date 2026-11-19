@@ -46,7 +46,7 @@ window.SERIES = {
     "src": "../assets/img/ext-placa.jpg",
     "mini": "../assets/img/ext-placa-800.jpg",
     "alt": "Granite window with a green railing and the Domus Duorum plaque on the yellow façade, next to the door of number 294",
-    "leg": "The façade",
+    "leg": "",
     "w": 1600,
     "h": 900
    },
@@ -263,6 +263,19 @@ window.SERIES = {
     "leg": "The lounge",
     "w": 3000,
     "h": 1688
+   }
+  ]
+ },
+ "patio": {
+  "titulo": "Courtyard",
+  "fotos": [
+   {
+    "src": "../assets/img/patio-porta.jpg",
+    "mini": "../assets/img/patio-porta-800.jpg",
+    "alt": "Corner of the courtyard with a canvas deckchair and a straw hat, hydrangeas, potted plants and the white glazed doors set in the yellow and granite wall",
+    "leg": "A corner in the sun",
+    "w": 1600,
+    "h": 900
    }
   ]
  },

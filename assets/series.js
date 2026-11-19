@@ -46,7 +46,7 @@ window.SERIES = {
     "src": "assets/img/ext-placa.jpg",
     "mini": "assets/img/ext-placa-800.jpg",
     "alt": "Janela de granito com gradeamento verde e a placa Domus Duorum na fachada amarela, junto à porta do número 294",
-    "leg": "A fachada",
+    "leg": "",
     "w": 1600,
     "h": 900
    },
@@ -263,6 +263,19 @@ window.SERIES = {
     "leg": "A sala",
     "w": 3000,
     "h": 1688
+   }
+  ]
+ },
+ "patio": {
+  "titulo": "Pátio",
+  "fotos": [
+   {
+    "src": "assets/img/patio-porta.jpg",
+    "mini": "assets/img/patio-porta-800.jpg",
+    "alt": "Recanto do pátio com espreguiçadeira de lona e chapéu de palha, hortênsias, vasos e as portas brancas de vidros na parede amarela e de granito",
+    "leg": "Um recanto ao sol",
+    "w": 1600,
+    "h": 900
    }
   ]
  },
