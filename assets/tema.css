@@ -49,3 +49,30 @@
 /* páginas legais: o mesmo logótipo, escuro sobre o papel */
 .legal__marca { display: inline-block; font-size: 0; line-height: 0; }
 .legal__marca::before { content: ""; display: block; height: 3.6rem; aspect-ratio: 376 / 321; background: url("logo-escuro.png") center / contain no-repeat; }
+
+/* Telemóvel (2026-11-20) */
+/* quartos: «Reservar este quarto» numa linha só; se não couber ao lado, o «Ver as N fotografias» passa para baixo */
+.qp__acoes .botao { white-space: nowrap; flex: none; }
+@media (max-width: 760px) and (orientation: portrait) { .qp__acoes { flex-wrap: wrap; row-gap: .55rem; } }
+/* deitado: o topo tem --topo-h (68 px), não 60; o título «Quartos» ficava por baixo da barra */
+@media (max-height: 520px) and (orientation: landscape) {
+  .qp__palco { padding-top: calc(var(--topo-h) + .5rem); }
+  .qp__moldura { --alt: calc(100svh - var(--topo-h) - 1.4rem); }
+}
+/* telemóvel pequeno deitado (barra de reserva em baixo): a foto e o índice 01–05 dos quartos acabam por cima da barra */
+@media (max-width: 760px) and (max-height: 520px) and (orientation: landscape) {
+  .anima .qp__palco { padding-bottom: calc(66px + env(safe-area-inset-bottom)); gap: 1.2rem; }
+  .qp__moldura { --alt: calc(100svh - var(--topo-h) - 66px - env(safe-area-inset-bottom) - 1rem); }
+  .qp__titulo { font-size: 1.45rem; }
+  .qp__nome { font-size: 1.6rem; }
+  .qp__camas { font-size: .8rem; }
+  .qp__acoes { margin-top: .4rem; }
+  .qp__acoes .botao { min-height: 36px; }
+  .qp__linha button { min-height: 26px; font-size: .72rem; }
+}
+@media (max-width: 760px) and (max-height: 370px) and (orientation: landscape) {
+  .qp__nome { font-size: 1.45rem; }
+  .qp__acoes .botao { min-height: 34px; }
+  .qp__linha button { min-height: 22px; }
+  .qp__moldura { --alt: calc(100svh - var(--topo-h) - 66px - env(safe-area-inset-bottom) - 1.4rem); }
+}
