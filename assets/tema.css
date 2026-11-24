@@ -45,7 +45,7 @@
 .topo__marca::before { height: calc(var(--topo-h) - 8px); }
 .topo.solido .topo__marca::before { background-image: url("logo-escuro.png"); }
 .topo:not(.solido) .topo__marca { filter: drop-shadow(0 1px 2px rgba(14, 14, 16, .55)) drop-shadow(0 2px 10px rgba(14, 14, 16, .45)); }
-.rodape__marca::before { height: 7.5rem; background-image: url("logo-rodape.png"); }
+.rodape__marca::before { height: 6.4rem; background-image: url("logo-rodape.png"); }
 /* páginas legais: o mesmo logótipo, escuro sobre o papel */
 .legal__marca { display: inline-block; font-size: 0; line-height: 0; }
 .legal__marca::before { content: ""; display: block; height: 3.6rem; aspect-ratio: 376 / 321; background: url("logo-escuro.png") center / contain no-repeat; }

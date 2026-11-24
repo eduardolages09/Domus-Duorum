@@ -1009,3 +1009,31 @@ html:not(.anima) .qb__linha button[aria-pressed="true"] .qb__traco span { --b: 1
   .dv__f--b { flex: none; min-height: 0; contain: none; display: block; }
   .dv__f--b .dv__b { width: 100%; height: auto; }
 }
+
+/* rodapé limpo ("rodape": {"barra": true}): barra legal entre filetes, o Livro em destaque, créditos recolhidos */
+.rodape--limpo .rodape__linha { padding-bottom: 2.8rem; }
+.rodape--limpo .rodape__onde { display: flex; flex-direction: column; align-items: flex-start; gap: .3rem; }
+.rodape--limpo .rodape__onde .mapa { margin-top: .7rem; }
+.rodape--limpo .rodape__reservas small + small { margin-top: 0; }
+.rodape__barra ul { display: flex; flex-wrap: wrap; gap: .2rem 2rem; margin: 0; padding: 1.1rem 0; list-style: none; border-bottom: 1px solid rgba(245, 242, 236, .12); }
+.rodape__barra a { display: inline-flex; align-items: center; min-height: 36px; color: rgba(245, 242, 236, .82); text-decoration: none; }
+.rodape__barra a:hover { color: #f5f2ec; text-decoration: underline; text-underline-offset: 5px; }
+.rodape__barra .rodape__livro { color: #f5f2ec; font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+.rodape__miudo { padding-top: 1.6rem; font-size: .78rem; line-height: 1.6; color: rgba(245, 242, 236, .6); }
+.rodape__miudo p { text-wrap: pretty; }
+.rodape__miudo > p a { white-space: nowrap; }
+.rodape__miudo p + p { margin-top: .35rem; }
+.rodape__miudo a { color: rgba(245, 242, 236, .75); text-underline-offset: 3px; }
+.rodape__creditos { margin-top: .9rem; }
+.rodape__creditos summary { display: inline-flex; align-items: center; gap: .5rem; min-height: 28px; cursor: pointer; list-style: none; }
+.rodape__creditos summary::-webkit-details-marker { display: none; }
+.rodape__creditos summary::after { content: ""; width: 5px; height: 5px; border: solid currentColor; border-width: 0 1px 1px 0; transform: translateY(-2px) rotate(45deg); transition: transform .3s; }
+.rodape__creditos[open] summary::after { transform: translateY(1px) rotate(225deg); }
+.rodape__creditos summary:hover { color: #f5f2ec; }
+.rodape__creditos p { max-width: 100ch; margin-top: .5rem; }
+@media (min-width: 761px) and (max-width: 1100px) { .rodape--limpo .rodape__linha { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); } .rodape--limpo .rodape__casa { grid-column: 1 / -1; } }
+@media (max-width: 760px) {
+  .rodape--limpo .rodape__linha { grid-template-columns: 1fr 1fr; gap: 2rem 1.4rem; padding-bottom: 2rem; }
+  .rodape--limpo .rodape__contacto, .rodape--limpo .rodape__redes { grid-column: 1 / -1; }
+  .rodape__barra ul { flex-direction: column; gap: .1rem; padding: .9rem 0; }
+}
